@@ -7,7 +7,7 @@
 <p>考虑类比点分治，用一条重边把一棵树划分为两个连通块并使得两个连通块的最大大小最小。</p>
 <p>直接做的复杂度显然是错误的。</p>
 <p>考虑三度化，具体方式如图：</p>
-<p><img src="https://images.cnblogs.com/cnblogs_com/Khada-Jhin/1295149/o_o_TREE2.png" alt="" /></p>
+<p><img src="https://cdn.luogu.com.cn/upload/image_hosting/wiohfw90.png" alt="" /></p>
 <h3 id="2-边分树基本知识"><a class="markdownIt-Anchor" href="#2-边分树基本知识"></a> 2 边分树基本知识</h3>
 <p>考虑类比点分树。</p>
 <p>在边分治过程中，把每次分治的边看作点，分治过程中相邻两层的重边连边，当连通块大小为 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn></mrow><annotation encoding="application/x-tex">1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span></span></span></span> 时，与点连边，这样会形成一棵二叉树，其中叶子都是原树中的点，非叶子是原树中的边。</p>
